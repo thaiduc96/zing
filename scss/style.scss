@@ -69,7 +69,7 @@ $headerHeight: 52px;
             }
           }
 
-          &:last-child{
+          &:last-child {
             cursor: pointer;
           }
         }
@@ -83,10 +83,10 @@ $headerHeight: 52px;
       justify-content: center;
       .search-form {
         cursor: pointer;
-        i{
+        i {
           font-size: 25px;
         }
-        .input-search{
+        .input-search {
           position: absolute;
           width: 250px;
           height: 34px;
@@ -108,17 +108,16 @@ $headerHeight: 52px;
     }
   }
 
-  
-  &.corona{
+  &.corona {
     padding-top: 53px;
   }
 
-  .corona-weather{
+  .corona-weather {
     display: flex;
     font-size: 12px;
     font-weight: 700;
     padding: 15px 0;
-    .corona{
+    .corona {
       border: 1px solid #f00;
       border-radius: 6px;
       color: #000000;
@@ -126,49 +125,49 @@ $headerHeight: 52px;
       display: flex;
       line-height: 21px;
       height: 21px;
-      strong{
+      strong {
         background-color: #f00;
         color: #ffffff;
         border: 1px solid #f00;
         padding: 0 10px;
       }
-      .corona-country{
+      .corona-country {
         padding: 0 10px;
         border-right: 1px solid #f00;
       }
 
-      .corona-status-info{
+      .corona-status-info {
         padding: 0 10px;
         font-weight: 100;
-        .corona-status-info-item{
+        .corona-status-info-item {
           padding: 0px 10px;
         }
       }
     }
-    .weather{
+    .weather {
       flex-grow: 1;
       text-align: right;
       font-size: 14px;
-      .city{
+      .city {
         align-items: center;
         justify-content: flex-end;
         display: flex;
-        span{
+        span {
           padding: 0 10px;
           font-weight: 100;
         }
       }
-      .sun{
+      .sun {
         height: 30px;
         width: 30px;
       }
     }
   }
 
-  .featured{
-    .content{
+  .featured {
+    .content {
       line-height: 1.4;
-      .newstrending{
+      .newstrending {
         width: 30%;
         display: flex;
         flex-direction: column;
@@ -176,54 +175,65 @@ $headerHeight: 52px;
         font-weight: 700;
         float: left;
         padding-right: 15px;
-        .newstrending-item{
-          padding-bottom:15px;
+        .newstrending-item {
+          padding-bottom: 15px;
           &:not(:first-child) {
             padding-top: 15px;
-          } 
+          }
           border-bottom: 1px solid #e4e4e4;
-          .newstrending-image{
+          .newstrending-image {
             width: 120px;
             float: left;
             margin-right: 12px;
           }
-          &:hover{
+          &:hover {
             color: #006BA0;
           }
         }
       }
 
-      .newsfeatured{
+      .newsfeatured {
         width: 70%;
         float: right;
-        display: flex;
-        .newsfeatured-item{
-          width: 33%;
-          &:first-child{
-            width: 66%;
-            margin-bottom: 0;
-            margin-right: 20px;
-            
-            p{
-              font-size: 32px;
-              font-weight: 700;
-            }
+        .newsfeatured-container {
+          display: flex;
+          .newsfeatured-item-right{
+            font-size: 16px;
+            font-weight: 700;
+            width: 33%;
           }
+          .newsfeatured-item {
 
-          .newsfeatured-image{
-            width: 100%;
-            img{
-              width: 100%;
+            &:not(:last-child) {
+              padding-bottom: 15px;
             }
+
+            &.main-item {
+              width: 66%;
+              margin-bottom: 0;
+              margin-right: 20px;
+
+              p {
+                font-size: 32px;
+                font-weight: 700;
+              }
+            }
+
+            .newsfeatured-image {
+              width: 100%;
+              img {
+                width: 100%;
+              }
+            }
+
           }
-          
         }
       }
     }
   }
 }
 
-.category-popup{
+.category-popup {
   background-color: #141329;
   color: #ffffff;
   padding: 20px 50px;
@@ -232,29 +242,29 @@ $headerHeight: 52px;
   opacity: 0;
   display: none;
 
-  &.active{
+  &.active {
     visibility: visible;
     opacity: 1;
     display: block;
   }
-  .category-menu{
-    .list-menu{
+  .category-menu {
+    .list-menu {
       display: flex;
       width: 100%;
       height: 100%;
       flex-wrap: wrap;
-      .item-menu{
-        width: calc(100%/6);
+      .item-menu {
+        width: calc(100% / 6);
         margin-right: 0;
         margin-bottom: 20px;
         line-height: 26px;
 
-        a{
+        a {
           font-size: 16px;
           color: #ddd;
           font-weight: 700;
         }
-        .subcate{
+        .subcate {
           font-size: 13px;
           font-weight: 400;
           color: #c7c7c7;

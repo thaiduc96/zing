@@ -145,20 +145,25 @@
           color: #006BA0; }
     .page-wrapper .featured .content .newsfeatured {
       width: 70%;
-      float: right;
-      display: flex; }
-      .page-wrapper .featured .content .newsfeatured .newsfeatured-item {
-        width: 33%; }
-        .page-wrapper .featured .content .newsfeatured .newsfeatured-item:first-child {
+      float: right; }
+      .page-wrapper .featured .content .newsfeatured .newsfeatured-container {
+        display: flex; }
+        .page-wrapper .featured .content .newsfeatured .newsfeatured-container .newsfeatured-item-right {
+          font-size: 16px;
+          font-weight: 700;
+          width: 33%; }
+        .page-wrapper .featured .content .newsfeatured .newsfeatured-container .newsfeatured-item:not(:last-child) {
+          padding-bottom: 15px; }
+        .page-wrapper .featured .content .newsfeatured .newsfeatured-container .newsfeatured-item.main-item {
           width: 66%;
           margin-bottom: 0;
           margin-right: 20px; }
-          .page-wrapper .featured .content .newsfeatured .newsfeatured-item:first-child p {
+          .page-wrapper .featured .content .newsfeatured .newsfeatured-container .newsfeatured-item.main-item p {
             font-size: 32px;
             font-weight: 700; }
-        .page-wrapper .featured .content .newsfeatured .newsfeatured-item .newsfeatured-image {
+        .page-wrapper .featured .content .newsfeatured .newsfeatured-container .newsfeatured-item .newsfeatured-image {
           width: 100%; }
-          .page-wrapper .featured .content .newsfeatured .newsfeatured-item .newsfeatured-image img {
+          .page-wrapper .featured .content .newsfeatured .newsfeatured-container .newsfeatured-item .newsfeatured-image img {
             width: 100%; }
 
 .category-popup {
@@ -179,7 +184,7 @@
     height: 100%;
     flex-wrap: wrap; }
     .category-popup .category-menu .list-menu .item-menu {
-      width: calc(100%/6);
+      width: calc(100% / 6);
       margin-right: 0;
       margin-bottom: 20px;
       line-height: 26px; }
@@ -191,5 +196,3 @@
         font-size: 13px;
         font-weight: 400;
         color: #c7c7c7; }
-
-/*# sourceMappingURL=style.css.map */

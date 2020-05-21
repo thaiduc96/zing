@@ -37,8 +37,8 @@
             <div class="toolbox">
                 <div class="search-form">
                     <!--<form action="">-->
-                        <!--<input type="text" class="input-search">-->
-                        <i class="fas fa-search"></i>
+                    <!--<input type="text" class="input-search">-->
+                    <i class="fas fa-search"></i>
                     <!--</form>-->
                 </div>
                 <div class="avatar">
@@ -154,7 +154,7 @@
             <div class="corona-status-info">
                 <span>Ca phục hồi: <b> 1.222.222</b></span>
                 <span class="corona-status-info-item">Ca nhiễm: <b>4.222.222</b></span>
-                <span >Ca tử vong: <b>4.222.222</b></span>
+                <span>Ca tử vong: <b>4.222.222</b></span>
             </div>
         </a>
         <div class="weather">
@@ -168,28 +168,39 @@
     <div class="featured">
         <div class="content">
             <div class="newstrending">
-                <?php for($i=0; $i<5; $i++){ ?>
-                <div class="newstrending-item">
-                    <a class="newstrending-image" href="#">
-                        <img src="https://znews-photo.zadn.vn/w210/Uploaded/pwvopivp/2020_05_19/4800.jpg" alt="asdsad">
-                    </a>
-                    <span>Bức ảnh người cha Ấn Độ bật khóc bên đường gây xúc động khắp thế giới</span>
-                </div>
+                <?php for ($i = 0; $i < 5; $i++) { ?>
+                    <div class="newstrending-item">
+                        <a class="newstrending-image" href="#">
+                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/pwvopivp/2020_05_19/4800.jpg"
+                                 alt="asdsad">
+                        </a>
+                        <span>Bức ảnh người cha Ấn Độ bật khóc bên đường gây xúc động khắp thế giới</span>
+                    </div>
                 <?php } ?>
             </div>
             <div class="newsfeatured">
-            <?php for($i=0; $i<3; $i++){ ?>
-                <div class="newsfeatured-item">
-                    <a class="newsfeatured-image" href="#">
-                        <img src="https://znews-photo.zadn.vn/w960/Uploaded/jopltui/2020_05_18/Hien2_1.jpg" alt="asdsad">
-                    </a>
-                    <p>Quân chủng Hải quân đề nghị giảm nhẹ đặc biệt cho ông Nguyễn Văn Hiến</p>
-                    <?php if($i==0) { ?>
+                <div class="newsfeatured-container">
+                    <div class="newsfeatured-item main-item">
+                        <a class="newsfeatured-image" href="#">
+                            <img src="https://znews-photo.zadn.vn/w960/Uploaded/jopltui/2020_05_18/Hien2_1.jpg"
+                                 alt="asdsad">
+                        </a>
+                        <p>Quân chủng Hải quân đề nghị giảm nhẹ đặc biệt cho ông Nguyễn Văn Hiến</p>
                         <span>Với tư cách bị hại, Quân chủng Hải quân đề nghị xử lý nghiêm nhóm của Đinh Ngọc Hệ và giảm nhẹ đặc biệt cho đô đốc Nguyễn Văn Hiến.</span>
                         <a href="#" class="related">Ông Nguyễn Văn Hiến bị đề nghị 3-4 năm tù, Út 'Trọc' 20 năm tù</a>
-                    <?php } ?>
+                    </div>
+                    <div class="newsfeatured-item-right">
+                        <?php for ($i = 0; $i < 2; $i++) { ?>
+                            <div class="newsfeatured-item">
+                                <a class="newsfeatured-image" href="#">
+                                    <img src="https://znews-photo.zadn.vn/w480/Uploaded/oplukaa/2020_05_09/maxresdefault.jpg"
+                                         alt="asdsad">
+                                </a>
+                                <p>Edward de Bono - gã 'quái kiệt' về tư duy</p>
+                            </div>
+                        <?php } ?>
+                    </div>
                 </div>
-                <?php } ?>
             </div>
         </div>
     </div>

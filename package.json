@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -watch scss -o css",
-    "build-scss": "sudo node-sass scss/style.scss css/style.css -w"
+    "scss": "node-sass -watch scss/style.scss -o css/style.css",
+    "build-scss": "sudo node-sass scss/style.scss css/style.css -w",
+    "build-scss2": "node-sass scss/style.scss css/style.css -w"
   },
   "author": "",
   "license": "ISC",
