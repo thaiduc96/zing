@@ -1,0 +1,266 @@
+$headerHeight: 52px;
+
+.header {
+  width: 100%;
+  position: fixed;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+
+.page-wrapper {
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%;
+
+  .container-header {
+    height: $headerHeight;
+    display: flex;
+
+    .logo {
+      width: 100px;
+      height: 100%;
+      img {
+        object-fit: cover;
+      }
+      display: flex;
+      flex-direction: column;
+      span {
+        text-align: center;
+        font-size: 8px;
+        text-transform: uppercase;
+        font-weight: 700;
+        white-space: nowrap;
+        &::after {
+          display: block;
+          font-size: 7px;
+          color: #888;
+          content: "HỘI XUẤN BẢN VIỆT NAM";
+        }
+      }
+    }
+    .category-menu {
+      line-height: $headerHeight;
+      flex-grow: 1;
+      .header-category-menu {
+        display: flex;
+        li {
+          font-size: 14px;
+          font-weight: bold;
+          margin-left: 15px;
+          position: relative;
+          a {
+            color: #444444;
+            &:hover {
+              color: #04b2f7;
+              &::after {
+                background-color: #04b2f7;
+              }
+            }
+
+            &::after {
+              content: '';
+              display: block;
+              width: 100%;
+              height: 3px;
+              background-color: transparent;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+            }
+          }
+
+          &:last-child{
+            cursor: pointer;
+          }
+        }
+
+      }
+    }
+
+    .toolbox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .search-form {
+        cursor: pointer;
+        i{
+          font-size: 25px;
+        }
+        .input-search{
+          position: absolute;
+          width: 250px;
+          height: 34px;
+          border-radius: 6px;
+          background-color: #444444;
+          padding-left: 15px;
+          -webkit-transition: all 0.3s ease 0s;
+          transition: all 0.3s ease 0s;
+        }
+      }
+      .avatar {
+        padding: 0 10px;
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+
+  
+  &.corona{
+    padding-top: 53px;
+  }
+
+  .corona-weather{
+    display: flex;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 15px 0;
+    .corona{
+      border: 1px solid #f00;
+      border-radius: 6px;
+      color: #000000;
+      text-transform: uppercase;
+      display: flex;
+      line-height: 21px;
+      height: 21px;
+      strong{
+        background-color: #f00;
+        color: #ffffff;
+        border: 1px solid #f00;
+        padding: 0 10px;
+      }
+      .corona-country{
+        padding: 0 10px;
+        border-right: 1px solid #f00;
+      }
+
+      .corona-status-info{
+        padding: 0 10px;
+        font-weight: 100;
+        .corona-status-info-item{
+          padding: 0px 10px;
+        }
+      }
+    }
+    .weather{
+      flex-grow: 1;
+      text-align: right;
+      font-size: 14px;
+      .city{
+        align-items: center;
+        justify-content: flex-end;
+        display: flex;
+        span{
+          padding: 0 10px;
+          font-weight: 100;
+        }
+      }
+      .sun{
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+
+  .featured{
+    .content{
+      line-height: 1.4;
+      .newstrending{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        font-size: 14.4px;
+        font-weight: 700;
+        float: left;
+        padding-right: 15px;
+        .newstrending-item{
+          padding-bottom:15px;
+          &:not(:first-child) {
+            padding-top: 15px;
+          } 
+          border-bottom: 1px solid #e4e4e4;
+          .newstrending-image{
+            width: 120px;
+            float: left;
+            margin-right: 12px;
+          }
+          &:hover{
+            color: #006BA0;
+          }
+        }
+      }
+
+      .newsfeatured{
+        width: 70%;
+        float: right;
+        display: flex;
+        .newsfeatured-item{
+          width: 33%;
+          &:first-child{
+            width: 66%;
+            margin-bottom: 0;
+            margin-right: 20px;
+            
+            p{
+              font-size: 32px;
+              font-weight: 700;
+            }
+          }
+
+          .newsfeatured-image{
+            width: 100%;
+            img{
+              width: 100%;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}
+
+.category-popup{
+  background-color: #141329;
+  color: #ffffff;
+  padding: 20px 50px;
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+
+  &.active{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+  .category-menu{
+    .list-menu{
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-wrap: wrap;
+      .item-menu{
+        width: calc(100%/6);
+        margin-right: 0;
+        margin-bottom: 20px;
+        line-height: 26px;
+
+        a{
+          font-size: 16px;
+          color: #ddd;
+          font-weight: 700;
+        }
+        .subcate{
+          font-size: 13px;
+          font-weight: 400;
+          color: #c7c7c7;
+        }
+      }
+    }
+
+  }
+}
