@@ -51,6 +51,7 @@
         <div class="page-wrapper">
             <nav class="category-menu">
                 <ul class="list-menu">
+                    <?php for ($i = 0; $i < 9; $i++) { ?>
                     <li class="item-menu"><a href="#" title="2abc"> Xã hội</a>
                         <div class="subcate">
                             <ul>
@@ -61,86 +62,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="item-menu"><a href="#" title="2abc"> Thế giới</a>
-                        <div class="subcate">
-                            <ul>
-                                <li>Chính trị</li>
-                                <li>Giáo dục</li>
-                                <li>Giao thông</li>
-                                <li>Pháp luật</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="item-menu"><a href="#" title="2abc"> Kinh doanh</a>
-                        <div class="subcate">
-                            <ul>
-                                <li>Chính trị</li>
-                                <li>Giáo dục</li>
-                                <li>Giao thông</li>
-                                <li>Pháp luật</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="item-menu"><a href="#" title="2abc"> Công nghệ</a>
-                        <div class="subcate">
-                            <ul>
-                                <li>Chính trị</li>
-                                <li>Giáo dục</li>
-                                <li>Giao thông</li>
-                                <li>Pháp luật</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="item-menu"><a href="#" title="2abc"> Thể thao</a>
-                        <div class="subcate">
-                            <ul>
-                                <li>Chính trị</li>
-                                <li>Giáo dục</li>
-                                <li>Giao thông</li>
-                                <li>Pháp luật</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="item-menu"><a href="#" title="2abc"> Giải trí</a>
-                        <div class="subcate">
-                            <ul>
-                                <li>Chính trị</li>
-                                <li>Giáo dục</li>
-                                <li>Giao thông</li>
-                                <li>Pháp luật</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="item-menu"><a href="#" title="2abc"> Thời trang</a>
-                        <div class="subcate">
-                            <ul>
-                                <li>Chính trị</li>
-                                <li>Giáo dục</li>
-                                <li>Giao thông</li>
-                                <li>Pháp luật</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="item-menu"><a href="#" title="2abc"> Đời sống</a>
-                        <div class="subcate">
-                            <ul>
-                                <li>Chính trị</li>
-                                <li>Giáo dục</li>
-                                <li>Giao thông</li>
-                                <li>Pháp luật</li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="item-menu"><a href="#" title="2abc"> Sức khỏe</a>
-                        <div class="subcate">
-                            <ul>
-                                <li>Chính trị</li>
-                                <li>Giáo dục</li>
-                                <li>Giao thông</li>
-                                <li>Pháp luật</li>
-                            </ul>
-                        </div>
-                    </li>
+                    <?php } ?>
                 </ul>
             </nav>
         </div>
@@ -166,42 +88,64 @@
         </div>
     </div>
     <div class="featured">
-        <div class="content">
-            <div class="newstrending">
-                <?php for ($i = 0; $i < 5; $i++) { ?>
-                    <div class="newstrending-item">
-                        <a class="newstrending-image" href="#">
-                            <img src="https://znews-photo.zadn.vn/w210/Uploaded/pwvopivp/2020_05_19/4800.jpg"
-                                 alt="asdsad">
-                        </a>
-                        <span>Bức ảnh người cha Ấn Độ bật khóc bên đường gây xúc động khắp thế giới</span>
+        <div class="newstrending">
+            <?php for ($i = 0; $i < 5; $i++) { ?>
+                <div class="newstrending-item">
+                    <a class="newstrending-image" href="#">
+                        <img src="https://znews-photo.zadn.vn/w210/Uploaded/pwvopivp/2020_05_19/4800.jpg"
+                                alt="asdsad">
+                    </a>
+                    <span>Bức ảnh người cha Ấn Độ bật khóc bên đường gây xúc động khắp thế giới</span>
+                </div>
+            <?php } ?>
+        </div>
+        <div class="newsfeatured">
+            <div class="newsfeatured-container">
+                <div class="newsfeatured-item main-item">
+                    <a class="newsfeatured-image" href="#">
+                        <img src="https://znews-photo.zadn.vn/w960/Uploaded/jopltui/2020_05_18/Hien2_1.jpg"
+                                alt="asdsad">
+                    </a>
+                    <p>Quân chủng Hải quân đề nghị giảm nhẹ đặc biệt cho ông Nguyễn Văn Hiến</p>
+                    <span>Với tư cách bị hại, Quân chủng Hải quân đề nghị xử lý nghiêm nhóm của Đinh Ngọc Hệ và giảm nhẹ đặc biệt cho đô đốc Nguyễn Văn Hiến.</span>
+                    <a href="#" class="related">Ông Nguyễn Văn Hiến bị đề nghị 3-4 năm tù, Út 'Trọc' 20 năm tù</a>
+                </div>
+                <div class="newsfeatured-item-right">
+                    <?php for ($i = 0; $i < 2; $i++) { ?>
+                        <div class="newsfeatured-item">
+                            <a class="newsfeatured-image" href="#">
+                                <img src="https://znews-photo.zadn.vn/w480/Uploaded/pgi_dhbpgunat/2020_05_22/2020_05_22T020941Z_941444942_RC2ETG93D8XB_RTRMADP_3_CHINA_PARLIAMENT.JPG"
+                                        alt="asdsad">
+                            </a>
+                            <p>Vì Covid-19, TQ không đặt mục tiêu tăng trưởng GDP cụ thể trong 2020</p>
+                        </div>
+                    <?php } ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="book">
+        <div class="book-header">
+            <p>Sách của bạn</p>
+        </div>
+        <div class="book-content">
+            <div class="book-content-slide">
+                <?php for ($i = 0; $i < 10; $i++) { ?>
+                    <div class="book-content-item" id="carousel<?=$i?>" data-index="<?=$i?>">
+                        <img src="https://znews-photo.zadn.vn/w480/Uploaded/jotnhg/2020_05_22/3_Cho_ben_thanh.jpg" alt="hi">
+                        <p class="book-content-item-title">Nhà nghiên cứu <?=$i?> tuổi ra mắt tác phẩm tâm huyết về đường phố TP.HCM</p>
                     </div>
                 <?php } ?>
             </div>
-            <div class="newsfeatured">
-                <div class="newsfeatured-container">
-                    <div class="newsfeatured-item main-item">
-                        <a class="newsfeatured-image" href="#">
-                            <img src="https://znews-photo.zadn.vn/w960/Uploaded/jopltui/2020_05_18/Hien2_1.jpg"
-                                 alt="asdsad">
-                        </a>
-                        <p>Quân chủng Hải quân đề nghị giảm nhẹ đặc biệt cho ông Nguyễn Văn Hiến</p>
-                        <span>Với tư cách bị hại, Quân chủng Hải quân đề nghị xử lý nghiêm nhóm của Đinh Ngọc Hệ và giảm nhẹ đặc biệt cho đô đốc Nguyễn Văn Hiến.</span>
-                        <a href="#" class="related">Ông Nguyễn Văn Hiến bị đề nghị 3-4 năm tù, Út 'Trọc' 20 năm tù</a>
-                    </div>
-                    <div class="newsfeatured-item-right">
-                        <?php for ($i = 0; $i < 2; $i++) { ?>
-                            <div class="newsfeatured-item">
-                                <a class="newsfeatured-image" href="#">
-                                    <img src="https://znews-photo.zadn.vn/w480/Uploaded/oplukaa/2020_05_09/maxresdefault.jpg"
-                                         alt="asdsad">
-                                </a>
-                                <p>Edward de Bono - gã 'quái kiệt' về tư duy</p>
-                            </div>
-                        <?php } ?>
-                    </div>
-                </div>
-            </div>
+           
+        </div>
+        <div class="book-arrows">
+                <button class="jsClickBtnArrows btn-book-arrows book-arrows-left">
+                    <i class="fas fa-angle-left"></i>
+                </button>
+                <button class="jsClickBtnArrows btn-book-arrows book-arrows-right">
+                    <i class="fas fa-angle-right"></i>
+                </button>
         </div>
     </div>
 </div>

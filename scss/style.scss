@@ -165,15 +165,17 @@ $headerHeight: 52px;
   }
 
   .featured {
-    .content {
-      line-height: 1.4;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    display: flex;
+    // .content {
       .newstrending {
         width: 30%;
         display: flex;
         flex-direction: column;
         font-size: 14.4px;
         font-weight: 700;
-        float: left;
+        // float: left;
         padding-right: 15px;
         .newstrending-item {
           padding-bottom: 15px;
@@ -194,7 +196,8 @@ $headerHeight: 52px;
 
       .newsfeatured {
         width: 70%;
-        float: right;
+        // float: right;
+        display: flex;
         .newsfeatured-container {
           display: flex;
           .newsfeatured-item-right{
@@ -227,6 +230,56 @@ $headerHeight: 52px;
             }
 
           }
+        }
+      }
+    // }
+  }
+
+  .book{
+    position: relative;
+    .book-header{
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .book-content {
+      overflow: hidden;
+      position: relative;
+      .book-content-slide{
+        display: flex;
+        position: relative;
+        .book-content-item{
+          min-width: calc(100% / 5 - 20px);
+          margin-right: 20px;
+        }
+      }
+    } 
+    .book-arrows{
+      .btn-book-arrows{
+        outline: none;
+        border: 0;
+        background-color: transparent;
+        margin: 0;
+
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        position: absolute;
+        top: 60%;
+        -webkit-transform: translateY(-40%);
+        transform: translateY(-40%);
+
+        cursor: pointer;
+        &.book-arrows-left{
+          left: -5%;
+        }
+        &.book-arrows-right{
+          right: -5%;
+        }
+
+        i{
+          font-size: 35px;
         }
       }
     }
@@ -264,7 +317,7 @@ $headerHeight: 52px;
           color: #ddd;
           font-weight: 700;
         }
-        .subcate {
+        .subcate { 
           font-size: 13px;
           font-weight: 400;
           color: #c7c7c7;
