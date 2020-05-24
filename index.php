@@ -130,10 +130,14 @@
         </div>
         <div class="book-content">
             <div class="book-content-slide">
-                <?php for ($i = 0; $i < 10; $i++) { ?>
+                <?php for ($i = 0; $i < 5; $i+=2) { ?>
                     <div class="book-content-item" id="carousel<?=$i?>" data-index="<?=$i?>">
                         <img src="https://znews-photo.zadn.vn/w480/Uploaded/jotnhg/2020_05_22/3_Cho_ben_thanh.jpg" alt="hi">
                         <p class="book-content-item-title">Nhà nghiên cứu <?=$i?> tuổi ra mắt tác phẩm tâm huyết về đường phố TP.HCM</p>
+                    </div>
+                    <div class="book-content-item" id="carousel<?=$i+1?>" data-index="<?=$i+1?>">
+                        <img src="https://znews-photo.zadn.vn/w480/Uploaded/jotnhg/2020_05_22/3_Cho_ben_thanh.jpg" alt="hi">
+                        <p class="book-content-item-title">Nhà nghiên cứu <?=$i+1?></p>
                     </div>
                 <?php } ?>
             </div>
@@ -146,6 +150,33 @@
                 <button class="jsClickBtnArrows btn-book-arrows book-arrows-right">
                     <i class="fas fa-angle-right"></i>
                 </button>
+        </div>
+    </div>
+    <div class="multimedia">
+        <div class="multimedia-header">
+            <h3>MULTIMEDIA</h3>
+            <ul class="multimedia-menu">
+                <li class="multimedia-item">VIDEO</li>
+                <li class="multimedia-item">LONGFORM</li>
+                <li class="multimedia-item">VOICES</li>
+                <li class="multimedia-item">LENS</li>
+                <li class="multimedia-item">QUIZZ</li>
+            </ul>
+        </div>
+        <div class="multimedia-content">
+            <div class="multimedia-content-list">
+                <?php for ($i = 0; $i < 7; $i+=1) { ?>
+                    <div class="multimedia-content-item">
+                        <img src="https://znews-photo.zadn.vn/w480/Uploaded/jotnhg/2020_05_22/3_Cho_ben_thanh.jpg" alt="hi">
+                        <?php if($i == 0) {  ?>
+                        <span></span>
+                        <?php } else { ?>
+                        <p class="multimedia-content-item-title">
+                            <i class="fas fa-image"></i>Gãy xương ngón tay, áo trắng Võ Thành An chấp nhận bỏ cuộc</p>
+                        <?php } ?>
+                    </div>
+                <?php } ?>
+            </div>
         </div>
     </div>
 </div>

@@ -3,7 +3,8 @@
   width: 100%;
   position: fixed;
   border-bottom: 1px solid #ddd;
-  background: #fff; }
+  background: #fff;
+  z-index: 9999; }
 
 .page-wrapper {
   margin: 0 auto;
@@ -167,7 +168,8 @@
           .page-wrapper .featured .newsfeatured .newsfeatured-container .newsfeatured-item .newsfeatured-image img {
             width: 100%; }
   .page-wrapper .book {
-    position: relative; }
+    position: relative;
+    margin-bottom: 30px; }
     .page-wrapper .book .book-header {
       margin-bottom: 20px;
       font-size: 18px;
@@ -181,7 +183,8 @@
         position: relative; }
         .page-wrapper .book .book-content .book-content-slide .book-content-item {
           min-width: calc(100% / 5 - 20px);
-          margin-right: 20px; }
+          margin-right: 20px;
+          background-color: #f8f8f8; }
     .page-wrapper .book .book-arrows .btn-book-arrows {
       outline: none;
       border: 0;
@@ -201,6 +204,64 @@
         right: -5%; }
       .page-wrapper .book .book-arrows .btn-book-arrows i {
         font-size: 35px; }
+  .page-wrapper .multimedia {
+    position: relative;
+    background-color: #ffde76; }
+    .page-wrapper .multimedia .multimedia-header {
+      display: flex;
+      padding: 20px 0;
+      font-weight: 700; }
+      .page-wrapper .multimedia .multimedia-header .multimedia-menu {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 14px; }
+        .page-wrapper .multimedia .multimedia-header .multimedia-menu .multimedia-item {
+          padding: 0 30px; }
+          .page-wrapper .multimedia .multimedia-header .multimedia-menu .multimedia-item:hover {
+            color: red; }
+    .page-wrapper .multimedia .multimedia-content .multimedia-content-list {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      font-weight: 500; }
+      .page-wrapper .multimedia .multimedia-content .multimedia-content-list .multimedia-content-item {
+        margin-bottom: 20px;
+        margin-right: 2%;
+        height: 100%;
+        width: 23.5%;
+        position: relative; }
+        .page-wrapper .multimedia .multimedia-content .multimedia-content-list .multimedia-content-item:first-child {
+          width: 49%; }
+        .page-wrapper .multimedia .multimedia-content .multimedia-content-list .multimedia-content-item:nth-child(3), .page-wrapper .multimedia .multimedia-content .multimedia-content-list .multimedia-content-item:last-child {
+          margin-right: 0%; }
+        .page-wrapper .multimedia .multimedia-content .multimedia-content-list .multimedia-content-item:hover {
+          color: #04b2f7;
+          cursor: pointer; }
+        .page-wrapper .multimedia .multimedia-content .multimedia-content-list .multimedia-content-item .multimedia-content-item-title i {
+          padding-right: 5px; }
+        .page-wrapper .multimedia .multimedia-content .multimedia-content-list .multimedia-content-item span {
+          align-items: center;
+          justify-content: center;
+          background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0) 0%, #323751 100%);
+          display: flex;
+          top: 0;
+          position: absolute;
+          width: 100%;
+          height: 100%; }
+          .page-wrapper .multimedia .multimedia-content .multimedia-content-list .multimedia-content-item span:after {
+            content: 'Gãy xương ngón tay, áo trắng Võ Thành An chấp nhận bỏ cuộc';
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 32px;
+            color: #fff;
+            width: 100%;
+            margin-left: 20px; }
+        .page-wrapper .multimedia .multimedia-content .multimedia-content-list .multimedia-content-item img {
+          width: 100%;
+          height: 100%; }
 
 .category-popup {
   background-color: #141329;
@@ -232,5 +293,3 @@
         font-size: 13px;
         font-weight: 400;
         color: #c7c7c7; }
-
-/*# sourceMappingURL=style.css.map */
