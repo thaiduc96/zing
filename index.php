@@ -125,8 +125,8 @@
         </div>
     </div>
     <div class="book">
-        <div class="book-header">
-            <p>Sách của bạn</p>
+        <div class="book-header title-header">
+            <p class="title-slash">Sách của bạn</p>
         </div>
         <div class="book-content">
             <div class="book-content-slide">
@@ -148,7 +148,106 @@
                 </button>
         </div>
     </div>
-</div>
+    
+    <div class="latest">
+        <div class="title-header">
+            <p class="title-slash">DÀNH CHO BẠN</p>
+        </div>
+        <div class="latest-content">
+            <div class="latest-content-list">
+            <?php for ($i = 0; $i < 3; $i++) { ?>
+                <div class="latest-content-item">
+                    <div class="latest-content-item-img">
+                        <img src="https://znews-photo.zadn.vn/w480/Uploaded/jaegtn/2020_05_02/ve_sau_3.jpg">
+                    </div>
+                    <div class="latest-content-item-content">
+                        <p class="latest-content-item-content-title">
+                        Hàng triệu ve sầu trồi lên mặt đất sau 17 năm ngủ đông
+                        </p>
+                        <p class="latest-content-item-content-meta">
+                            <span class="time">4 giờ trước</span>
+                            <span class="category">Thế giới</span>
+                        </p>
+                        <p class="latest-content-item-content-description">
+                        Xu hướng kết hợp công nghệ và thời trang đang ngày càng phổ biến. Oppo cũng không nằm ngoài cuộc chơi khi bắt tay cùng Prof. Jimmy Choo, OBE để mang đến BST ốp lưng độc lạ.
+                        </p>
+                    </div>
+                </div>
+            <?php } ?>
+            </div>
+            <div class="latest-content-advertisement">
+                <img src="https://adtima-media.zadn.vn/2020/05/1dd98ce8-1239-48e5-a9ba-2fcb85e44627.jpg">
+            </div>
+        </div>
+    </div>
+    <div class="entertainment">
+        <div class="entertainment-content-list">
+            <?php for ($j = 0; $j < 8; $j++) { ?>
 
+            <div class="entertainment-content-item">
+                <div class="title-header">
+                    <p class="title-slash">XUẤT BẢN</p>
+                </div>
+                <div class="entertainment-content-item-list">
+                    <?php for ($i = 0; $i < 3; $i++) { ?>
+                    <div class="entertainment-content-item-list-item">
+                        <div class="entertainment-content-item-list-item-img">
+                            <img src="https://znews-photo.zadn.vn/w480/Uploaded/yqdxwpujv/2020_05_23/4Q8A4807_2.jpg">
+                        </div>
+                        <p class="entertainment-content-item-list-item-title">Liên minh của 2 người từng giàu nhất nước Mỹ được hình thành thế nào?</p>
+                    </div>
+                    <?php } ?>
+                </div>
+            </div>
+            <?php } ?>
+
+        </div>
+    </div>
+
+    <div class="video">
+        <div class="title-header">
+            <p class="title-slash">VIDEO</p>
+        </div>
+        <div class="video-content">
+            <div class="video-player">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5oPtGofW4UY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-content-list">
+                <?php for ($i = 0; $i < 8; $i++) { ?>
+
+                <div class="video-content-list-item">
+                    <div class="video-content-list-item-img">
+                        <img src="https://adtima-media.zadn.vn/2020/05/1dd98ce8-1239-48e5-a9ba-2fcb85e44627.jpg">
+                        <span class="time-video"><i class="fas fa-play"></i> 00:21</span>
+                    </div>
+                    <p class="video-content-list-item-title"> Ôtô tải, xe container 'cày' nát đường làng khi né trạm BOT</p>
+                </div>
+                <?php } ?>
+
+            </div>
+        </div> 
+    </div>
+</div>
+<footer>
+    <div class="page-wrapper">
+        <div class="left-side-info">
+            <div class="logo">
+                <img src="https://static-znews.zadn.vn/images/logo-zing-home.svg" alt="logo">
+            </div>
+            <div class="web-info">
+                <p> Tạp chí điện tử Tri thức trực tuyến Cơ quan chủ quản: Hội Xuất Bản Việt Nam </p>
+                <p>Giấy phép báo chí: số 75/GP-BTTTT</p>
+            </div>
+        </div>
+        <div class="copyright-info">
+            <p>© 2020 Toàn bộ bản quyền thuộc Zing</p>
+            <div class="menu-footer">
+                <span>Liên hệ</span>
+                <span>Tuyển dụng</span>
+                <span>Quảng cáo</span>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
